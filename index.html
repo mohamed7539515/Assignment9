@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+ <section id="Bookmark" class=" vh-100 py-5">
+  <h1 class="text-center my-5 ">Bookmarker</h1>
+  <div class=" w-75 mx-auto">
+    <div class="bor">
+      <div class="my-3">
+        
+        <h2 class="text-center my-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites<i class="fa-solid fa-bookmark ps-2"></i></h2>
+   
+       <label for="SiteName" class="fs-5 fw-bold my-3"><i class="fa-solid fa-book-bookmark pe-2"></i>  Site Name</label>
+       <input oninput="validation()" placeholder="Bookmark Name" type="text" id="SiteName" class="form-control ">
+      </div>
+      <div class="my-3">
+     <label for="SiteUrl" class="fs-5 fw-bold is-invalid"> <i class="fa-solid fa-link pe-2"></i> Site URL</label>
+     <input oninput="validationUrl()" placeholder="WepSite URL" type="text" id="SiteUrl" class="form-control">
+     </div>
+     <div class="text-center my-4">
+      <button  onclick="addsite()" class=" btn btn-primary mt-3">Site URL</button>
+     </div>
+     
+    </div>
+    <div>
+      <table class="table my-3 text-center bg-white">
+        <thead>
+           <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+           </tr>
+        </thead>
+    
+        <tbody id="tableBody">
+           
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</section>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html> 
